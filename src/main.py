@@ -3,13 +3,10 @@ from pydantic import BaseModel
 from services.llm_service import analyze_requirement
 from models.response_models import RequirementAnalysis
 
-
 app = FastAPI(title="AI Engineering Workbench")
-
 
 class AnalyzeRequest(BaseModel):
     requirement: str
-
 
 @app.post("/analyze", response_model=RequirementAnalysis)
 def analyze(request: AnalyzeRequest) -> RequirementAnalysis:
