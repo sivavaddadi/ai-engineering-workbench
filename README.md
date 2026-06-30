@@ -28,7 +28,7 @@ Every project in this repository aims to answer three questions:
 
 # Guiding Principles
 
-- Build before reading.
+- Build and learn in small increments.
 - Learn concepts before frameworks.
 - Prefer simple architecture over clever architecture.
 - Every project should solve a real engineering problem.
